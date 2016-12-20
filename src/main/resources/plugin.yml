@@ -1,0 +1,7 @@
+name: OMNOMNOM
+version: 1.0
+main: com.myththewolf.omnomnom.omnomnom
+commands:
+ test:
+     description: test
+     aliases: [emotions]
