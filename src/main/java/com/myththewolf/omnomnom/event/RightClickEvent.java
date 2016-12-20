@@ -45,12 +45,12 @@ public class RightClickEvent implements Listener {
 					int food = e.getPlayer().getFoodLevel();
 					e.getPlayer().setFoodLevel(food + entry.getValue());
 					 if (stack.getAmount() > 1) {
-						 //e.getPlayer().getInventory().getItemInMainHand().setAmount(stack.getAmount()-1);
-						 //e.setCancelled(true);
+						 e.getPlayer().getInventory().getItemInMainHand().setAmount(stack.getAmount()-1);
+						 e.setCancelled(true);
 						 return;
 					 }else{
-						 //e.getPlayer().getInventory().remove(e.getPlayer().getInventory().getItemInMainHand());
-						 //e.setCancelled(true);
+						 e.getPlayer().getInventory().remove(e.getPlayer().getInventory().getItemInMainHand());
+						 e.setCancelled(true);
 						 return;
 					 }
 					
